@@ -1,0 +1,28 @@
+﻿
+@model List<Student>
+
+
+<h1>Students Table</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Address</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (Student s in Model)
+            {
+                <tr>
+                <td>@s.Id</td>
+                <td>@s.Name</td>
+                <td>@s.Age</td>
+                <td>@s.Address</td>
+                </tr>
+            }
+    </tbody>
+</table>
